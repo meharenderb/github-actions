@@ -2,7 +2,7 @@ on:
   push:
     branches:
       - master
-name: 🚀 Deploy website on push
+name: Github_Actions
 jobs:
   web-deploy:
     name: 🎉 Deploy
@@ -17,4 +17,4 @@ jobs:
         server: ftp.nationaltalentofindia.com
         username: ${{ secrets.ftp_username }}
         password: ${{ secrets.ftp_password }}
-        server-dir: /actions.nationaltalentofindia.com/
+        server-dir: /home/actions.nationaltalentofindia.com/
